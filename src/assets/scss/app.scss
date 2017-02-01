@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+.callout-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: $white;
+}
+
+.bestuurslid .thumbnail img {
+    height: 80px;
+}
+
+.top-bar a {
+    color: $white;
+}
+
+.top-bar .logo {
+    margin-left: $global-margin;
+}
+
+footer {
+    background: $jet;
+
+    padding: $global-padding;
+    margin-top: $global-margin;
+
+    &, & a {
+        color: $medium-gray;
+    }
+}
+
+main {
+    margin-top: $global-margin;
+    margin-bottom: $global-margin;
+}
+
+article {
+    margin-bottom: 3 * $global-margin;
+}
+
+.callout-header {
+    border: none;
+}
+
+.mb1 {
+    margin-bottom: $global-margin;
+}
+
+@mixin gradient-overlay-text($opacity: .3) {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,$opacity/3) 70%, rgba(0,0,0,$opacity));
+    }
+
+    img {
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@mixin overlay-text() {
+    z-index: 20;
+    color: #fff;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+}
+
+.ontdek-tile {
+    display: block;
+    @include gradient-overlay-text(.3);
+
+    h3 {
+        @include overlay-text();
+    }
+
+    img {
+        width: 100%;
+    }
+}
