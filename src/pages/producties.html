@@ -7,13 +7,14 @@ title: Producties
     <h1>Producties</h1>
 </div>
 
-<article class="productie">
+<article class="productie" itemscope itemtype="http://schema.org/TheaterEvent">
+    <meta itemprop="inLanguage" content="nl" />
     <div class="row">
         <div class="column">
-            <h2>Zebra's op Sterk Water</h2>
+            <h2 itemprop="name">Zebra's op Sterk Water</h2>
         </div>
     </div>
-    <div class="orbit" role="region" aria-label="Foto's van Zebra's op Sterk Water" data-orbit>
+    <div class="orbit mb1" role="region" aria-label="Foto's van Zebra's op Sterk Water" data-orbit>
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Vorige</span>&#9664;</button>
             <button class="orbit-next"><span class="show-for-sr">Volgende</span>&#9654;</button>
@@ -21,18 +22,20 @@ title: Producties
                 <img class="orbit-image" alt="Foto tijdens een voorstelling van ZOSW" src="{{root}}assets/img/producties/zosw/zosw-foto-1.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image" alt="Foto tijdens een voorstelling van ZOSW"
+                <img class="orbit-image" itemprop="image"
+                     alt="Foto tijdens een voorstelling van ZOSW"
                      src="{{root}}assets/img/producties/zosw/zosw-foto-2.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image" alt="Foto tijdens een voorstelling van ZOSW"
+                <img class="orbit-image" itemprop="image"
+                     alt="Foto tijdens een voorstelling van ZOSW"
                      src="{{root}}assets/img/producties/zosw/zosw-foto-3.jpg">
             </li>
         </ul>
     </div>
 
     <div class="row">
-        <div class="medium-8 columns">
+        <div class="medium-8 columns" itemprop="description">
             <p>
                 <strong>Vreemd</strong>
                 <em>(bijvoeglijk naamwoord; uitspraak: [vremt]):</em>
@@ -67,7 +70,148 @@ title: Producties
             </p>
         </div>
         <div class="medium-4 columns">
-            Najaar 2016
+            <dl>
+                <dt>Speeldata</dt>
+                <dd>
+                    <time itemprop="startDate" datetime="2016-11-18T20:00">18</time>,
+                    19, 25, 26 november, 2, <time itemprop="endDate" datetime="2016-12-03T20:00">3</time>
+                    december 2016
+                </dd>
+                <dt>Locatie</dt>
+                <dd itemprop="location" itemtype="http://schema.org/Place">
+                    <span itemprop="name">BrandWoeker</span>,
+                    <span itemprop="address">Woeker 7, 9700 Oudenaarde</span>
+                </dd>
+                <dt>Inkom</dt>
+                <dd>
+                    <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="EUR" />
+                        €<span itemprop="price">5</span>
+                    </p>
+                    <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="EUR" />
+                        OK-pas: €<span itemprop="price">1.50</span>
+                    </p>
+                </dd>
+                <dt>Regie</dt>
+                <dd itemprop="director" itemtype="http://schema.org/Person">
+                    <span itemprop="givenName">
+                        Pieter
+                    </span>
+                    <span itemprop="familyName">
+                        Coorevits
+                    </span>
+                </dd>
+                <dt>Acteurs</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Célia
+                            </span>
+                            <span itemprop="familyName">
+                                Van Heuverzwijn
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Emma
+                            </span>
+                            <span itemprop="familyName">
+                                Browaeys
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Ferre
+                            </span>
+                            <span itemprop="familyName">
+                                Vuye
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Gaelle
+                            </span>
+                            <span itemprop="familyName">
+                                Goubau
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Heleen
+                            </span>
+                            <span itemprop="familyName">
+                                De Meyer
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Jens
+                            </span>
+                            <span itemprop="familyName">
+                                Vanderstraeten
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Jessie
+                            </span>
+                            <span itemprop="familyName">
+                                Huysman
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Järne
+                            </span>
+                            <span itemprop="familyName">
+                                Neyt
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Martha
+                            </span>
+                            <span itemprop="familyName">
+                                Samyn
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Rune
+                            </span>
+                            <span itemprop="familyName">
+                                Noterdaeme
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Staf
+                            </span>
+                            <span itemprop="familyName">
+                                Slots
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Victor
+                            </span>
+                            <span itemprop="familyName">
+                                Vermaerke
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Zoë
+                            </span>
+                            <span itemprop="familyName">
+                                Van Cleemput
+                            </span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
         </div>
     </div>
 
@@ -78,38 +222,38 @@ title: Producties
 
 
 
-<article class="productie">
+<article class="productie" itemscope itemtype="http://schema.org/TheaterEvent">
     <div class="row">
         <div class="column">
-            <h2>Lolita</h2>
+            <h2 itemprop="name">Lolita</h2>
         </div>
     </div>
-    <div class="orbit" role="region" aria-label="Foto's van Lolita" data-orbit>
+    <div class="orbit mb1" role="region" aria-label="Foto's van Lolita" data-orbit>
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Vorige</span>&#9664;</button>
             <button class="orbit-next"><span class="show-for-sr">Volgende</span>&#9654;</button>
             <li class="orbit-slide is-active">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Lolita"
                      src="{{root}}assets/img/producties/lolita/lolita-foto-1.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Lolita"
                      src="{{root}}assets/img/producties/lolita/lolita-foto-2.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Lolita"
                      src="{{root}}assets/img/producties/lolita/lolita-foto-3.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Lolita"
                      src="{{root}}assets/img/producties/lolita/lolita-foto-4.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Lolita"
                      src="{{root}}assets/img/producties/lolita/lolita-foto-5.jpg">
             </li>
@@ -117,7 +261,7 @@ title: Producties
     </div>
 
     <div class="row">
-        <div class="medium-8 columns">
+        <div class="medium-8 columns" itemprop="description">
             <blockquote>
                 “Geachte dames en heren van de jury, mijn intenties waren
                 zuiver. Ik hield van haar. Ik was een monster, maar ik hield van
@@ -143,7 +287,96 @@ title: Producties
 
         </div>
         <div class="medium-4 columns">
-            Najaar 2015
+            <dl>
+                <dt>Speeldata</dt>
+                <dd>
+                    <time itemprop="startDate" datetime="2015-11-20T20:00">20</time>,
+                    22, 27, 28 november, 4, <time itemprop="endDate" datetime="2016-12-05T20:00">5</time>
+                    december 2015, 20:00
+                </dd>
+                <dt>Locatie</dt>
+                <dd itemprop="location" itemtype="http://schema.org/Place">
+                    <span itemprop="name">BrandWoeker</span>,
+                    <span itemprop="address">Woeker 7, 9700 Oudenaarde</span>
+                </dd>
+                <dt>Inkom</dt>
+                <dd>
+                    <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="EUR" />
+                        €<span itemprop="price">5</span>
+                    </p>
+                    <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="EUR" />
+                        OK-pas: €<span itemprop="price">1.50</span>
+                    </p>
+                </dd>
+                <dt>Regie</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="director" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Michèle
+                            </span>
+                            <span itemprop="familyName">
+                                Van Wassenhove
+                            </span>
+                            </li>
+                            <li itemprop="director" itemtype="http://schema.org/Person">
+                                <span itemprop="givenName">
+                                    Marcel
+                                </span>
+                                <span itemprop="familyName">
+                                    Samyn
+                                </span>
+                            </li>
+                    </li>
+                </dd>
+                <dt>Acteurs</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Pieter
+                            </span>
+                            <span itemprop="familyName">
+                                Coorevits
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Martha
+                            </span>
+                            <span itemprop="familyName">
+                                Samyn
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Ferre
+                            </span>
+                            <span itemprop="familyName">
+                                Vuye
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Rune
+                            </span>
+                            <span itemprop="familyName">
+                                Noterdaeme
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Brecht
+                            </span>
+                            <span itemprop="familyName">
+                                Ghyselinck
+                            </span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
         </div>
     </div>
 
@@ -155,38 +388,38 @@ title: Producties
 
 
 
-<article class="productie">
+<article class="productie mb1" itemscope itemtype="http://schema.org/TheaterEvent">
     <div class="row">
         <div class="column">
-            <h2>NUMA</h2>
+            <h2 itemprop="name">NUMA</h2>
         </div>
     </div>
-    <div class="orbit" role="region" aria-label="Foto's van Numa" data-orbit>
+    <div class="orbit mb1" role="region" aria-label="Foto's van Numa" data-orbit>
         <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Vorige</span>&#9664;</button>
             <button class="orbit-next"><span class="show-for-sr">Volgende</span>&#9654;</button>
             <li class="orbit-slide is-active">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Numa"
                      src="{{root}}assets/img/producties/numa/numa-foto-1.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Numa"
                      src="{{root}}assets/img/producties/numa/numa-foto-2.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Numa"
                      src="{{root}}assets/img/producties/numa/numa-foto-3.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Numa"
                      src="{{root}}assets/img/producties/numa/numa-foto-4.jpg">
             </li>
             <li class="orbit-slide">
-                <img class="orbit-image"
+                <img class="orbit-image" itemprop="image"
                      alt="Foto van Numa"
                      src="{{root}}assets/img/producties/numa/numa-foto-5.jpg">
             </li>
@@ -194,7 +427,7 @@ title: Producties
     </div>
 
     <div class="row">
-        <div class="medium-8 columns">
+        <div class="medium-8 columns" itemprop="description">
             <p>
                 Op de Afrikaanse savanne leven alle dieren een vredig bestaan.
                 Wanneer de gemene luipaard Masani na lange tijd terug opduikt,
@@ -204,7 +437,263 @@ title: Producties
             </p>
         </div>
         <div class="medium-4 columns">
-            Voorjaar 2015
+            <dl>
+                <dt>Speeldata</dt>
+                <dd>
+                    <time itemprop="startDate" datetime="2015-05-15T20:00">15</time>,
+                    16, 23, 29, <time itemprop="endDate" datetime="2015-05-30T20:00">30</time>
+                    mei 2015, 20:00<br />
+                    17, 24 mei 2015, 15:00
+                </dd>
+                <dt>Locatie</dt>
+                <dd itemprop="location" itemtype="http://schema.org/Place">
+                    <span itemprop="name">Schoolcomplex Leupegem</span>,
+                    <span itemprop="address">Dokter Dewolfplein 9, 9700 Oudenaarde</span>
+                </dd>
+                <dt>Inkom</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="EUR" />
+                            t.e.m. 12 jaar: €<span itemprop="price">6</span>
+                        </li>
+                        <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="EUR" />
+                            +12 jaar: €<span itemprop="price">8</span>
+                        </li>
+                        <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="EUR" />
+                            OK-pas: €<span itemprop="price">1.50</span>
+                        </li>
+                    </ul>
+                </dd>
+                <dt>Regie</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="director" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Dieter
+                            </span>
+                            <span itemprop="familyName">
+                                Covent
+                            </span>
+                        </li>
+                        <li itemprop="director" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Erna
+                            </span>
+                            <span itemprop="familyName">
+                                De Voet
+                            </span>
+                        </li>
+                    </ul>
+                </dd>
+                <dt>Acteurs</dt>
+                <dd>
+                    <ul>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Indra
+                            </span>
+                            <span itemprop="familyName">
+                                Bil
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Emma
+                            </span>
+                            <span itemprop="familyName">
+                                Browaeys
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Pieter
+                            </span>
+                            <span itemprop="familyName">
+                                Coorevits
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Jasmijn
+                            </span>
+                            <span itemprop="familyName">
+                                De Poortere
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Heleen
+                            </span>
+                            <span itemprop="familyName">
+                                De Meyer
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Alexia
+                            </span>
+                            <span itemprop="familyName">
+                                Devos
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Bettina
+                            </span>
+                            <span itemprop="familyName">
+                                Ghijs
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Brecht
+                            </span>
+                            <span itemprop="familyName">
+                                Ghyselinck
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Jessie
+                            </span>
+                            <span itemprop="familyName">
+                                Huysman
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Caitlin
+                            </span>
+                            <span itemprop="familyName">
+                                Lagaert
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Stien
+                            </span>
+                            <span itemprop="familyName">
+                                Lecluyze
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Luca
+                            </span>
+                            <span itemprop="familyName">
+                                Leener
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Lise
+                            </span>
+                            <span itemprop="familyName">
+                                Neyt
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Flore
+                            </span>
+                            <span itemprop="familyName">
+                                Noterdaeme
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Rune
+                            </span>
+                            <span itemprop="familyName">
+                                Noterdaeme
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Savannah
+                            </span>
+                            <span itemprop="familyName">
+                                Rogge
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Martha
+                            </span>
+                            <span itemprop="familyName">
+                                Samyn
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Staf
+                            </span>
+                            <span itemprop="familyName">
+                                Slots
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Geike
+                            </span>
+                            <span itemprop="familyName">
+                                Van Ommeslaeghe
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Michèle
+                            </span>
+                            <span itemprop="familyName">
+                                Van Wassenhove
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Kato
+                            </span>
+                            <span itemprop="familyName">
+                                Van Der Meiren
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Jens
+                            </span>
+                            <span itemprop="familyName">
+                                Vanderstraeten
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Manon
+                            </span>
+                            <span itemprop="familyName">
+                                De Rijcke
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Victor
+                            </span>
+                            <span itemprop="familyName">
+                                Vermaerke
+                            </span>
+                        </li>
+                        <li itemprop="actor" itemtype="http://schema.org/Person">
+                            <span itemprop="givenName">
+                                Ferre
+                            </span>
+                            <span itemprop="familyName">
+                                Vuye
+                            </span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
         </div>
     </div>
 
