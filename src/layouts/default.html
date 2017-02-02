@@ -2,14 +2,15 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
+    <head itemscope itemtype="http://schema.org/WebSite">
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta itemprop="url" content="http://litoziekla.be">
         {{#if title}}
-        <title>{{title}} | Jeugdtheater Litoziekla* vzw</title>
+        <title itemprop="name">{{title}} | Jeugdtheater Litoziekla* vzw</title>
         {{else}}
-        <title>Jeugdtheater Litoziekla* vzw</title>
+        <title itemprop="name">Jeugdtheater Litoziekla* vzw</title>
         {{/if}}
         <link rel="stylesheet" href="{{root}}assets/css/app.css">
 
