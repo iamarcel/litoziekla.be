@@ -98,6 +98,10 @@ article {
     margin-bottom: $global-margin;
 }
 
+.mt1 {
+    margin-top: $global-margin;
+}
+
 @mixin gradient-overlay-text($opacity: .3) {
     position: relative;
 
